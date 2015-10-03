@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+<body>
+<h1 align="middle"> Create Your Own Group </h1>
+</body>
+<form align="middle">
+	Name: <input type ="text" name="name"><br>
+	Group Name: <input type = "text" name = "gname"><br>
+	Password: <input type = "text" name = "pass"><br><br>
+	<input type = "submit" value = "Submit">
+</form>
