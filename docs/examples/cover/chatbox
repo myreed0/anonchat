@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<style > 
+*{
+	box-sizing: border-box;
+}
+.chatContainer{
+	width: 800px;
+	height: 800px;
+	border: 3px solid #ddd;
+}
+
+.chatContainer > .chatHeader {
+	width: 100%;
+	background: white;
+	padding: 5px;
+	border-bottom: 2px solid #ddd;
+}
+.chatContainer > .chatMessages{
+	height: 660px;
+	border-bottom: 1px solid #ddd;
+	overflow-y: scroll;
+	font-style: Verdana;
+}
+.chatContainer > .chatBottom form input[type='submit']{
+	padding: 6px;
+	background: white;
+	border: 2px solid #ddd;
+	cursor: pointer;
+}
+.chatContainer > .chatBottom form input[type = 'text']{
+	width: 85%;
+	padding: 3px;
+	padding-left: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin: 5px;
+	height: 30px;
+}
+</style>
+
+<body>
+<div class = 'chatContainer'>
+	<div class ='chatHeader' align = "middle">
+		<h1> ChatBox </h1>
+	</div>
+	<div class = 'chatMessages'>
+		<h4><font face="georgia" color = "black"> Text Here text here Text here Text here </font></h4>
+	</div>
+	<div class = 'chatBottom'>
+		<form action = '#' onSubmit='return false;' id='chatForm'>
+			<input type='text' name = 'text' id = 'text' value ='' placeholder = 'Chat...'/>
+			<input type = 'submit' name = 'submit' value = 'Post' />
+		</form>
+	</div>
+</div>
+</body>
